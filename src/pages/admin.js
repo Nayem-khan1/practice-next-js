@@ -1,3 +1,5 @@
+import DashboardLayout from '@/components/Layouts/DashboardLayout';
+import RootLayouts from '@/components/Layouts/RootLayouts';
 import React from 'react';
 
 const Admin = () => {
@@ -9,3 +11,13 @@ const Admin = () => {
 };
 
 export default Admin;
+
+Admin.getLayout = function getLayout (page) {
+    return (
+        <RootLayouts>
+            <DashboardLayout>
+                {page}
+            </DashboardLayout>
+        </RootLayouts>
+    )
+}

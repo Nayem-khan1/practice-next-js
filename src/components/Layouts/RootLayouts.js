@@ -46,7 +46,7 @@ const RootLayouts = ({children}) => {
                     className="site-layout-content"
                     style={{
                         background: colorBgContainer,
-                        height: 600,
+                        height: "100vh",
                     }}
                 >
                     {children}
